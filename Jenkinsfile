@@ -34,12 +34,6 @@ pipeline{
                 sh 'php artisan test'
             }
         }
-        // state ('Deploy') {
-        //     steps{
-        //         echo 'Deploying...'
-        //         sh 'ansible-playbook -i inventory/hosts.ini deploy.yml'
-        //     }
-        // }
     }
 
 }
