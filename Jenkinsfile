@@ -3,7 +3,7 @@ pipeline{
         label 'laravel'
     }
     stage{
-        state ('Build') {
+        stage ('Build') {
             steps{
                 echo 'Building...'
                 checkout scm
@@ -28,7 +28,7 @@ pipeline{
 
             }
         }
-        state ('Test') {
+        stage ('Test') {
             steps{
                 echo 'Testing...'
                 sh 'php artisan test'
