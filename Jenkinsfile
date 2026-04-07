@@ -4,7 +4,7 @@ pipeline {
     }
     tools{
         git 'LinuxGit'
-       }
+    }
 
     stages {   // <-- all stages must be inside this block
         stage('Build') {
