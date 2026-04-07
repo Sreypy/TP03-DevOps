@@ -2,6 +2,10 @@ pipeline {
     agent {
         label 'laravel'
     }
+    agent any
+        tools{
+            git 'LinuxGit'
+        }
 
     stages {   // <-- all stages must be inside this block
         stage('Build') {
