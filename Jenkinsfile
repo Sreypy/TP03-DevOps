@@ -3,7 +3,7 @@ pipeline {
         label 'laravel'
     }
     tools{
-        git 'LinuxGit'
+        git 'git'
     }
 
     stages {   // <-- all stages must be inside this block
